@@ -1,12 +1,12 @@
 .main-nav {
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   font-weight: 300;
   color: #f8f9fa;
   background-color: #212529;
 
   display: flex;
   justify-content: space-between;
-  padding: 0.8rem 2.4rem;
+  padding: 1.2rem 2.4rem;
 }
 
 .logo {
@@ -36,4 +36,92 @@
 .right-nav-link:hover,
 .right-nav-link:active {
   color: #868e96;
+}
+
+header {
+  height: 100vh;
+  position: relative;
+
+  background-image: linear-gradient(
+      rgba(193, 193, 193, 0.221),
+      rgba(204, 204, 204, 0.196)
+    ),
+    url(Images/hallstatt-g8df99b688_1920.jpg);
+  background-size: cover;
+  color: #f8f9fa;
+}
+
+.heading-text {
+  /* color: #212529; */
+  margin: 4.8rem 0 6.4rem 8rem;
+  font-size: 6.2rem;
+  font-weight: 600;
+}
+
+.main-btn {
+  color: #f8f9fa;
+  margin-left: 6.4rem;
+  background-color: #212529;
+  font-weight: 600;
+  font-size: 3rem;
+  padding: 1.5rem 4.8rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.main-btn:hover {
+  background-color: #343a40;
+}
+
+/* SECTION1 */
+
+.cards {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  background-color: #f1f3f5;
+  padding: 8rem;
+}
+
+.card {
+  background-color: #f1f3f5;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 1.1rem;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+.card-content {
+  padding: 1rem 4.8rem 6.4rem 4.8rem;
+}
+
+.card-img {
+  width: 100%;
+}
+
+.card-tag {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 2rem;
+}
+
+.tag {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #f8f9fa;
+  text-transform: uppercase;
+  background-color: #868e96;
+  padding: 0.4rem 0.8rem;
+  border-radius: 100px;
+}
+
+.card-text {
+  font-size: 1.6rem;
+  text-align: center;
 }

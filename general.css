@@ -26,12 +26,14 @@ Paragraph default: 1.6
 #868E96
 #343A40
 
+
 ---5 SHADOWS
 box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
 
 ---6 BORDER-RADIUS
 
-Default: 2rem;
+Default: 1.1rem;
+2rem
 
 ---7 WHITESPACE
 
@@ -52,4 +54,11 @@ html {
 
 body {
   font-family: "Rubik", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  /* max-width: 120rem; */
+  /* padding: 0 3.2rem; */
+  margin: 0 auto;
 }
