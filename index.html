@@ -21,14 +21,20 @@
     <header>
       <nav class="main-nav">
         <div class="left-nav">
-          <div><img class="logo" src="Images/airplane-white.png" alt="" /></div>
-          <div class="title-logo">WeFly</div>
+          <div>
+            <img
+              class="logo"
+              src="Images/airplane-white.png"
+              alt="WeFly logo"
+            />
+          </div>
+          <a class="nav-link title-logo">WeFly</a>
         </div>
         <div class="right-nav">
-          <a class="right-nav-link" href="">Explore</a>
-          <a class="right-nav-link" href="">Packages</a>
-          <a class="right-nav-link" href="">Honeymoon</a>
-          <a class="right-nav-link" href="">Inspirations</a>
+          <a class="nav-link" href="">Explore</a>
+          <a class="nav-link" href="#section2">Packages</a>
+          <a class="nav-link" href="">Inspirations</a>
+          <a class="nav-link" id="crud" href="">Crud</a>
         </div>
       </nav>
 
@@ -37,135 +43,234 @@
         regret is the one you <br />
         didn't take.
       </h1>
-      <button class="main-btn">Let's fly?</button>
+      <a class="main-btn" href="#section1">Let's fly?</a>
     </header>
 
-    <section class="container section-cards">
-      <h1 class="title">Let's fly?</h1>
-      <div class="cards">
-        <div class="card flights">
-          <img
-            class="card-img"
-            src="Images/plane-g0cb9b70ad_1920.jpg"
-            alt="plane's window view: clouds"
-          />
-          <div class="card-content">
-            <div class="card-tag"><span class="tag">Flights</span></div>
-            <p class="card-text">
-              We take care of your reservations with the best rates on the
-              market.
-            </p>
-            <ion-icon class="icon" name="airplane-outline"></ion-icon>
+    <main>
+      <section id="section1" class="container section-cards">
+        <h1 class="title">Let's fly?</h1>
+        <div class="cards">
+          <div class="card flights">
+            <img
+              class="card-img"
+              src="Images/plane-g0cb9b70ad_1920.jpg"
+              alt="plane's window view: clouds"
+            />
+            <div class="card-content">
+              <div class="card-tag"><span class="tag">Flights</span></div>
+              <p class="card-text">
+                We take care of your reservations with the best rates on the
+                market.
+              </p>
+              <ion-icon class="icon" name="airplane-outline"></ion-icon>
+            </div>
+          </div>
+          <div class="card stays">
+            <img
+              class="card-img"
+              src="Images/villa-cortine-palace-g4bfea685c_1920.jpg"
+              alt="Hotel living room"
+            />
+            <div class="card-content">
+              <div class="card-tag"><span class="tag">Stays</span></div>
+              <p class="card-text">
+                Our agents will help you find the best hotel options.
+              </p>
+              <ion-icon class="icon" name="bed-outline"></ion-icon>
+            </div>
+          </div>
+          <div class="card guided">
+            <img
+              class="card-img"
+              src="Images/friends-g17f64fe55_1920.jpg"
+              alt="Three friends"
+            />
+            <div class="card-content">
+              <div class="card-tag"><span class="tag">Guided Tour</span></div>
+              <p class="card-text">
+                Embark on an adventure accompained by a guide.
+              </p>
+              <ion-icon class="icon" name="accessibility-outline"></ion-icon>
+            </div>
           </div>
         </div>
-        <div class="card stays">
-          <img
-            class="card-img"
-            src="Images/villa-cortine-palace-g4bfea685c_1920.jpg"
-            alt="Hotel living room"
-          />
-          <div class="card-content">
-            <div class="card-tag"><span class="tag">Stays</span></div>
-            <p class="card-text">
-              Our agents will help you find the best hotel options.
-            </p>
-            <ion-icon class="icon" name="bed-outline"></ion-icon>
-          </div>
-        </div>
-        <div class="card guided">
-          <img
-            class="card-img"
-            src="Images/friends-g17f64fe55_1920.jpg"
-            alt="Three friends"
-          />
-          <div class="card-content">
-            <div class="card-tag"><span class="tag">Guided Tour</span></div>
-            <p class="card-text">
-              Embark on an adventure accompained by a guide.
-            </p>
-            <ion-icon class="icon" name="accessibility-outline"></ion-icon>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="container section-packages">
-      <h2 class="title">Packages</h2>
-      <div>
-        <div class="pack">
-          <div>
-            <h2>Cruise</h2>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit,
-              sit. Laborum, porro animi. Facilis nesciunt, vero est quibusdam
-              quisquam sit! Ad expedita nam harum. Optio obcaecati tempora
-              pariatur corrupti voluptatibus!
-            </p>
+      <section id="section2" class="container section-packages">
+        <h2 class="title">Packages</h2>
+        <div class="gallery-view">
+          <div class="pack-content">
+            <div class="pack">
+              <div class="pack-title">
+                <h2>Hotels and Resorts</h2>
+                <ion-icon class="icon" name="chevron-down-outline"></ion-icon>
+              </div>
+              <div class="pack-text">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+                  soluta omnis consectetur minus error voluptates ipsam beatae
+                  debitis delectus quisquam. Odio voluptates quis sit placeat
+                  impedit saepe inventore accusantium perferendis.
+                </p>
+              </div>
+            </div>
+            <div class="pack">
+              <div class="pack-title">
+                <h2>Cruise</h2>
+                <ion-icon class="icon" name="chevron-down-outline"></ion-icon>
+              </div>
+              <div class="pack-text">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Velit, sit. Laborum, porro animi. Facilis nesciunt, vero est
+                  quibusdam quisquam sit! Ad expedita nam harum. Optio obcaecati
+                  tempora pariatur corrupti voluptatibus!
+                </p>
+              </div>
+            </div>
+            <div class="pack">
+              <div class="pack-title">
+                <h2>Guided Tours</h2>
+                <ion-icon class="icon" name="chevron-down-outline"></ion-icon>
+              </div>
+              <div class="pack-text">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Minima vel officia inventore nulla maiores animi ea eveniet,
+                  voluptate aspernatur fugiat a exercitationem veritatis quo.
+                  Distinctio beatae earum ducimus quasi totam?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="pack-gallery">
+            <figure class="pack-img">
+              <img src="Images/hotelroom.jpg" alt="Hotel room" />
+            </figure>
+            <figure class="pack-img">
+              <img src="Images/hotel-landscape.jpg" alt="Hotel landscape" />
+            </figure>
+            <figure class="pack-img">
+              <img src="Images/hotel-pool-bar.jpg" alt="Hotel pool bar" />
+            </figure>
+            <figure class="pack-img">
+              <img
+                src="Images/cruise-ship-g2b0011e93_1920.jpg"
+                alt="cruise ship"
+              />
+            </figure>
+            <figure class="pack-img">
+              <img
+                class="pack-img"
+                src="Images/cruise-ship-g550460528_1920.jpg"
+                alt="cruise ship"
+              />
+            </figure>
+            <figure class="pack-img">
+              <img
+                src="Images/new-zealand-g91456b8df_1920.jpg"
+                alt="cruise ship"
+              />
+            </figure>
+            <figure class="pack-img">
+              <img
+                src="Images/friends-snow.jpg"
+                alt="friends posing in the snow"
+              />
+            </figure>
+            <figure class="pack-img">
+              <img src="Images/friends-boat.jpg" alt="People on boats" />
+            </figure>
+            <figure class="pack-img">
+              <img
+                src="Images/friends-sundown.jpg"
+                alt="friends together at the end of the day"
+              />
+            </figure>
           </div>
         </div>
-        <div class="pack">
-          <h2>Hotels and Resorts</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est soluta
-            omnis consectetur minus error voluptates ipsam beatae debitis
-            delectus quisquam. Odio voluptates quis sit placeat impedit saepe
-            inventore accusantium perferendis.
-          </p>
+      </section>
+
+      <section class="section-partners">
+        <h2 class="title-partners">Our partners</h2>
+        <div class="logos">
+          <img src="Images/logo1.png" alt="generic logo" />
+          <img src="Images/logo2.png" alt="generic logo" />
+          <img src="Images/logo3.png" alt="generic logo" />
+          <img src="Images/logo4.png" alt="generic logo" />
+          <img src="Images/logo5.png" alt="generic logo" />
         </div>
-        <div class="pack">
-          <h2>Guided Tours</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima vel
-            officia inventore nulla maiores animi ea eveniet, voluptate
-            aspernatur fugiat a exercitationem veritatis quo. Distinctio beatae
-            earum ducimus quasi totam?
-          </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-logo-title">
+        <div>
+          <img
+            class="footer-logo"
+            src="Images/airplane-white.png"
+            alt="WeFly logo"
+          />
+          <h3 class="footer-title">WeFly</h3>
         </div>
+        <ul class="social-links">
+          <li>
+            <a class="social-link" href="#"
+              ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a class="social-link" href="#"
+              ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a class="social-link" href="#"
+              ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+            ></a>
+          </li>
+        </ul>
       </div>
-      <div class="pack-gallery">
-        <img
-          class="pack-img"
-          src="Images/cruise-ship-g2b0011e93_1920.jpg"
-          alt="cruise ship"
-        />
-        <img
-          class="pack-img"
-          src="Images/cruise-ship-g550460528_1920.jpg"
-          alt="cruise ship"
-        />
-        <img
-          class="pack-img"
-          src="Images/new-zealand-g91456b8df_1920.jpg"
-          alt="cruise ship"
-        />
-        <img class="pack-img" src="Images/hotelroom.jpg" alt="Hotel room" />
-        <img
-          class="pack-img"
-          src="Images/hotel-landscape.jpg"
-          alt="Hotel landscape"
-        />
-        <img
-          class="pack-img"
-          src="Images/hotel-pool-bar.jpg"
-          alt="Hotel pool bar"
-        />
-        <img
-          class="pack-img"
-          src="Images/friends-boat.jpg"
-          alt="People on boats"
-        />
-        <img
-          class="pack-img"
-          src="Images/friends-sundown.jpg"
-          alt="friends together at the end of the day"
-        />
-        <img
-          class="pack-img"
-          src="Images/friends-snow.jpg"
-          alt="friends posing in the snow"
-        />
+      <div class="copy">
+        <p class="copyright">
+          Copyright &copy; <span class="year">2027</span> by <br />
+          WeFly, Inc. All rights reserved.
+        </p>
       </div>
-    </section>
+
+      <div class="footer-contact">
+        <p class="footer-heading">Contact us</p>
+        <ul class="footer-social-links">
+          <li><a class="social-link" href="#">221b Baker Street, London</a></li>
+
+          <li>
+            <a class="social-link" href="#"
+              >555-555-5555 <br />
+              letsgo@wefly.com</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-company">
+        <p class="footer-heading">Company</p>
+        <ul class="footer-social-links">
+          <li><a class="social-link" href="#">About WeFly</a></li>
+          <li><a class="social-link" href="#">Our partners</a></li>
+          <li><a class="social-link" href="#">Privacy &amp; terms</a></li>
+          <li><a class="social-link" href="#">Carrers</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-account">
+        <p class="footer-heading">Account</p>
+        <ul class="footer-social-links">
+          <li><a class="social-link" href="#">Create account</a></li>
+          <li><a class="social-link" href="#">Sign in</a></li>
+          <li><a class="social-link" href="#">Help center</a></li>
+        </ul>
+      </div>
+    </footer>
 
     <script
       type="module"
