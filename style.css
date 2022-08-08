@@ -162,9 +162,11 @@ header {
 
 .pack-title {
   font-size: 1.8rem;
+  font-weight: 400;
   display: flex;
   justify-content: space-between;
   padding: 2rem;
+  text-transform: uppercase;
 }
 
 .pack-title:hover {
@@ -205,6 +207,10 @@ header {
 
 /*------------------------- SECTION LOGOS---------------------------- */
 
+.section-partners {
+  margin-bottom: 8rem;
+}
+
 .title-partners {
   text-align: center;
   text-transform: uppercase;
@@ -234,7 +240,7 @@ header {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr 1fr;
-  align-items: center;
+  padding-top: 6rem;
   justify-items: center;
 }
 
@@ -256,6 +262,7 @@ header {
   font-size: 1.2rem;
   color: #ced4da;
   text-align: center;
+  align-self: center;
 }
 
 .footer-heading {
