@@ -1,5 +1,33 @@
 'use strict';
 
+fetch('https://countriesnow.space/api/v0.1/countries/capital')
+  .then(data => data.json())
+  .then(res => fillDropDown(res.data));
+
+function fillDropDown(countriesData) {
+  const dropCountries = document.querySelector('#countries-dropdown');
+  let nameCountries = countriesData.map((x, i) => {
+    return { name: x.name, value: i + 1 };
+  });
+  nameCountries.forEach(country => {
+    let option = document.createElement('option');
+    option.value = country.value;
+    option.textContent = country.name;
+    dropCountries.appendChild(option);
+  });
+}
+
+// var selectHtml = document.querySelector('select');
+// for (let i = 0; i < selectHtml.children.length; i++) {
+//   const option = selectHtml.children[i];
+//   if (option.value == selectHtml.value) {
+//     console.log(`Achei o ${option.text} no item ${i}`);
+//     break;
+//   }
+
+//   console.log('Eu continuo procurando!');
+// }
+
 //-------smooth scrolling----------
 
 const allLinks = document.querySelectorAll('a:link');

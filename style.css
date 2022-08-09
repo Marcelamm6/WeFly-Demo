@@ -140,6 +140,27 @@ header {
   margin-bottom: 2rem;
 }
 
+.card-guidedtour {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-guidedtour::after {
+  content: 'New places';
+  position: absolute;
+  top: 10%;
+  right: -20%;
+
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #f1f3f5;
+  background-color: #212529;
+  padding: 0.8rem 8rem;
+
+  transform: rotate(45deg);
+}
+
 /*----------------------- SECTION PACKAGES----------------------- */
 
 .gallery-view {
