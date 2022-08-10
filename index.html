@@ -31,17 +31,28 @@
           <a class="nav-link title-logo">WeFly</a>
         </div>
         <div class="right-nav">
-          <a class="nav-link" href="">Explore</a>
-          <a class="nav-link" href="#section2">Packages</a>
-          <a class="nav-link" href="">Inspirations</a>
+          <a class="nav-link" href="#section2">Explore</a>
+          <a class="nav-link" href="#section3">Packages</a>
+          <a class="nav-link" href="#section4">Inspirations</a>
           <a class="nav-link" id="crud" href="">Crud</a>
         </div>
       </nav>
 
       <h1 class="heading-text">
-        The only trip you will <br />
-        regret is the one you <br />
-        didn't take.
+        <span class="heading-span">The</span>
+        <span class="heading-span">only</span>
+        <span class="heading-span">trip</span>
+        <span class="heading-span">you</span>
+        <span class="heading-span">will</span>
+        <br />
+        <span class="heading-span">regret</span>
+        <span class="heading-span">is</span>
+        <span class="heading-span">the</span>
+        <span class="heading-span">one</span>
+        <span class="heading-span">you</span>
+        <br />
+        <span class="heading-span">didn't</span>
+        <span class="heading-span">take.</span>
       </h1>
       <a class="main-btn" href="#section1">Let's fly?</a>
     </header>
@@ -96,52 +107,64 @@
         </div>
       </section>
 
-      <section id="section2" class="container section-packages">
+      <section id="section2" class="container section-explore">
+        <div>
+          <h2 class="title">Explore</h2>
+          <img src="Images/hand-gcf3d8b907_640.png" alt="" />
+        </div>
+      </section>
+
+      <section id="section3" class="container section-packages">
         <h2 class="title">Packages</h2>
         <div class="gallery-view">
           <div class="pack-content">
-            <!-- <select class="pack-title" name="" id="countries-dropdown">
-              <option value="0">Hotels and Resorts</option>
-            </select> -->
             <div class="pack">
-              <div class="pack-title">
-                <p>Hotels and Resorts</p>
-                <ion-icon class="icon" name="chevron-down-outline"></ion-icon>
-              </div>
-              <div class="pack-text">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
-                  soluta omnis consectetur minus error voluptates ipsam beatae
-                  debitis delectus quisquam. Odio voluptates quis sit placeat
-                  impedit saepe inventore accusantium perferendis.
+              <button class="pack-title btnactive" data-tab="1">
+                <span>Hotels and Resorts </span>
+              </button>
+              <button class="pack-title" data-tab="2">
+                <span>Cruise </span>
+              </button>
+              <button class="pack-title" data-tab="3">
+                <span>Guided Tours </span>
+              </button>
+            </div>
+            <div class="all-text">
+              <div class="pack-txts click1 no-txt txt-active">
+                <div class="icon-txt">
+                  <ion-icon class="icon" name="star"></ion-icon>
+                  <ion-icon class="icon" name="star"></ion-icon>
+                  <ion-icon class="icon" name="star"></ion-icon>
+                  <ion-icon class="icon" name="star"></ion-icon>
+                  <ion-icon class="icon" name="star"></ion-icon>
+                </div>
+                <p class="pack-loren">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tempore amet atque quas doloribus ratione velit odio est?
+                  Quibusdam tempora deserunt error a sequi iure excepturi
+                  dolorum earum? Soluta, quam nesciunt.
                 </p>
               </div>
-            </div>
-            <div class="pack">
-              <div class="pack-title">
-                <p>Cruise</p>
-                <ion-icon class="icon" name="chevron-down-outline"></ion-icon>
-              </div>
-              <div class="pack-text">
-                <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Velit, sit. Laborum, porro animi. Facilis nesciunt, vero est
-                  quibusdam quisquam sit! Ad expedita nam harum. Optio obcaecati
-                  tempora pariatur corrupti voluptatibus!
+              <div class="pack-txts click2 no-txt">
+                <div class="icon-txt">
+                  <ion-icon class="icon" name="boat-outline"></ion-icon>
+                </div>
+                <p class="pack-loren">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Atque distinctio accusamus minima, ab fuga quaerat architecto
+                  sapiente, ullam debitis consequatur totam nam quod adipisci!
+                  Amet debitis doloribus incidunt voluptas repellat.
                 </p>
               </div>
-            </div>
-            <div class="pack">
-              <div class="pack-title">
-                <p>Guided Tours</p>
-                <ion-icon class="icon" name="chevron-down-outline"></ion-icon>
-              </div>
-              <div class="pack-text">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Minima vel officia inventore nulla maiores animi ea eveniet,
-                  voluptate aspernatur fugiat a exercitationem veritatis quo.
-                  Distinctio beatae earum ducimus quasi totam?
+              <div class="pack-txts click3 no-txt">
+                <div class="icon-txt">
+                  <ion-icon class="icon" name="happy-outline"></ion-icon>
+                </div>
+                <p class="pack-loren">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+                  necessitatibus voluptas assumenda sit! Fuga ducimus numquam
+                  neque dolores voluptate, sapiente quaerat placeat eligendi ea
+                  officiis deserunt tempora corrupti sint error!
                 </p>
               </div>
             </div>
@@ -192,6 +215,60 @@
               />
             </figure>
           </div>
+        </div>
+      </section>
+
+      <section id="section4" class="container section-inspirations">
+        <div class="inspire-videos">
+          <div class="vids">
+            <iframe
+              class="video vid-1"
+              width="250"
+              height="169"
+              src="https://www.youtube.com/embed/EsFheWkimsU"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <iframe
+              class="video vid-2"
+              width="250"
+              height="169"
+              src="https://www.youtube.com/embed/r-meZ7j4EtQ"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <iframe
+              class="video vid-3"
+              width="250"
+              height="169"
+              src="https://www.youtube.com/embed/axqSGXU5qIw"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="inspire-left">
+            <iframe
+              class="video"
+              width="800"
+              height="455"
+              src="https://www.youtube.com/embed/65j700G51ZY"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <p class="inspire-txt">
+              The Urban Life channel was created to show the beauty of life in
+              big cities and metropolises around the world.
+            </p>
+          </div>
+          <div><h2 class="title title-inspirations">Inspirations</h2></div>
         </div>
       </section>
 
