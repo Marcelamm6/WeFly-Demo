@@ -50,7 +50,7 @@ allLinks.forEach(function (link) {
   });
 });
 
-//--------------accordion-----------------
+//--------------tabbed-----------------
 
 const dropComp = document.querySelectorAll('.pack-content');
 const dropEl = document.querySelector('.pack');
