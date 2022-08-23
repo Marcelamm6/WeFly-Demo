@@ -1,5 +1,53 @@
 'use strict';
 
+//---------Sticky navigation--------
+
+const homePage = document.querySelector('.home-page');
+
+const observer = new IntersectionObserver(
+  function (entries) {
+    const ent = entries[0];
+    if (!ent.isIntersecting) {
+      console.log(ent);
+      document.body.classList.add('sticky');
+    }
+    if (ent.isIntersecting) {
+      console.log(ent);
+      document.body.classList.remove('sticky');
+    }
+  },
+  {
+    root: null,
+    threshold: 0,
+    rootMargin: '-60px',
+  }
+);
+observer.observe(homePage);
+
+//-------smooth scrolling----------
+
+const allLinks = document.querySelectorAll('a:link');
+
+allLinks.forEach(function (link) {
+  link.addEventListener('click', function (e) {
+    e.preventDefault();
+    const href = link.getAttribute('href');
+    // console.log(href);
+
+    if (href === '#')
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      });
+    if (href !== '#' && href.startsWith('#')) {
+      const sectionEl = document.querySelector(href);
+      sectionEl.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+});
+
+//---------------Explore---------------
+
 fetch('https://countriesnow.space/api/v0.1/countries/capital')
   .then(data => data.json())
   .then(res => fillDropDown(res.data));
@@ -27,28 +75,6 @@ function fillDropDown(countriesData) {
 
 //   console.log('Eu continuo procurando!');
 // }
-
-//-------smooth scrolling----------
-
-const allLinks = document.querySelectorAll('a:link');
-
-allLinks.forEach(function (link) {
-  link.addEventListener('click', function (e) {
-    e.preventDefault();
-    const href = link.getAttribute('href');
-    // console.log(href);
-
-    if (href === '#')
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth',
-      });
-    if (href !== '#' && href.startsWith('#')) {
-      const sectionEl = document.querySelector(href);
-      sectionEl.scrollIntoView({ behavior: 'smooth' });
-    }
-  });
-});
 
 //--------------tabbed-----------------
 
