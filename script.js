@@ -8,11 +8,11 @@ const observer = new IntersectionObserver(
   function (entries) {
     const ent = entries[0];
     if (!ent.isIntersecting) {
-      console.log(ent);
+      // console.log(ent);
       document.body.classList.add('sticky');
     }
     if (ent.isIntersecting) {
-      console.log(ent);
+      // console.log(ent);
       document.body.classList.remove('sticky');
     }
   },
@@ -64,6 +64,41 @@ function fillDropDown(countriesData) {
     dropCountries.appendChild(option);
   });
 }
+
+const dropCountries = document.querySelector('#countries-dropdown');
+const exploreButton = document.querySelector('.explore-button');
+
+dropCountries.addEventListener('click', function (e) {
+  e.preventDefault();
+
+  for (let i = 0; i < dropCountries.length; i++) {
+    const option = dropCountries.children[i];
+    if (option.value == dropCountries.value && i !== 0) {
+      console.log(option.text);
+      document.querySelector(
+        '.explore-span-text'
+      ).textContent = `about ${option.text}`;
+      document.querySelector('.explore-span').style.opacity = 100;
+    }
+  }
+});
+
+const exploreName = document.querySelector('.explore-name');
+const exploreEmail = document.querySelector('.explore-email');
+
+exploreButton.addEventListener('click', function (e) {
+  e.preventDefault();
+
+  if (
+    dropCountries.value !== 0 &&
+    exploreName.value.length !== 0 &&
+    exploreEmail.value.length !== 0
+  ) {
+    document.querySelector('.explore-subs-green').style.display = 'block';
+  } else {
+    document.querySelector('.explore-subs-red').style.opacity = 100;
+  }
+});
 
 // var selectHtml = document.querySelector('select');
 // for (let i = 0; i < selectHtml.children.length; i++) {

@@ -53,8 +53,9 @@ html {
 }
 
 body {
-  font-family: "Rubik", sans-serif;
+  font-family: 'Rubik', sans-serif;
   background-color: #f1f3f5;
+  width: 100%;
 }
 
 .container {

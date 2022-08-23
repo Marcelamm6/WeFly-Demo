@@ -4,6 +4,7 @@
   color: #f8f9fa;
   background-color: #212529;
   height: 6rem;
+  width: 100%;
 
   display: flex;
   justify-content: space-between;
@@ -65,6 +66,7 @@
     url(Images/hallstatt-g8df99b688_1920.jpg);
   background-size: cover;
   color: #f8f9fa;
+  width: 100%;
 }
 
 .heading-text {
@@ -277,22 +279,74 @@ span:nth-child(14) {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
-  padding: 6rem 0 4rem 0;
+  padding: 8rem 0 4rem 0;
+  margin: 2rem;
 }
 
 .select-box {
-  text-transform: uppercase;
   font-size: 3.6rem;
   padding: 4.8rem;
 
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.26);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(2.4px);
   -webkit-backdrop-filter: blur(2.4px);
   border-radius: 1.1rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.explore-choose {
+  text-transform: uppercase;
+}
+
+#countries-dropdown:hover {
+  cursor: pointer;
+}
+
+.explore-name,
+.explore-email {
+  font-size: 2rem;
+  padding: 2rem 0 1rem 2rem;
+}
+
+.explore-span {
+  font-size: 2rem;
+  padding-top: 2rem;
+  opacity: 0;
+}
+
+.explore-subs-green,
+.explore-subs-red {
+  font-size: 1.6rem;
+  font-weight: 600;
+  background-color: #f1f3f5cb;
+  text-align: center;
+}
+
+.explore-subs-green {
+  color: #087f5b;
+  display: none;
+}
+
+.explore-subs-red {
+  color: #c92a2a;
+  opacity: 0;
+}
+
+.explore-button {
+  margin-left: 2rem;
+  background: none;
+  border: none;
+}
+
+.explore-button {
+  cursor: pointer;
 }
 
 .explore-title {
+  text-transform: uppercase;
   font-size: 7.4rem;
   text-shadow: #ccc 1px 0 10px;
 }
@@ -389,6 +443,8 @@ span:nth-child(14) {
 /*---------------------------- SECTION INSPIRATIONS---------------------------- */
 
 .section-inspirations {
+  height: 100vh;
+  max-width: 120rem;
   margin-top: 10rem;
   padding-top: 8rem;
 }
