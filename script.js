@@ -46,6 +46,14 @@ allLinks.forEach(function (link) {
   });
 });
 
+//--------------Home------------------
+
+document
+  .querySelector('.left-nav')
+  .addEventListener('click', () =>
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  );
+
 //---------------Explore---------------
 
 fetch('https://countriesnow.space/api/v0.1/countries/capital')
