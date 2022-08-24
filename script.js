@@ -74,7 +74,7 @@ dropCountries.addEventListener('click', function (e) {
   for (let i = 0; i < dropCountries.length; i++) {
     const option = dropCountries.children[i];
     if (option.value == dropCountries.value && i !== 0) {
-      console.log(option.text);
+      // console.log(option.text);
       document.querySelector(
         '.explore-span-text'
       ).textContent = `about ${option.text}`;
@@ -83,20 +83,22 @@ dropCountries.addEventListener('click', function (e) {
   }
 });
 
-const exploreName = document.querySelector('.explore-name');
-const exploreEmail = document.querySelector('.explore-email');
+const exploreName = document.querySelector('.explore-input-name');
+const exploreEmail = document.querySelector('#explore-email');
 
 exploreButton.addEventListener('click', function (e) {
   e.preventDefault();
 
   if (
     dropCountries.value !== 0 &&
-    exploreName.value.length !== 0 &&
-    exploreEmail.value.length !== 0
+    exploreName.value.length > 0 &&
+    exploreEmail.value.length > 0
   ) {
-    document.querySelector('.explore-subs-green').style.display = 'block';
+    document.querySelector('.explore-subs-green').style.opacity = 100;
+    document.querySelector('.explore-subs-red').style.opacity = 0;
   } else {
     document.querySelector('.explore-subs-red').style.opacity = 100;
+    document.querySelector('.explore-subs-green').style.opacity = 0;
   }
 });
 
