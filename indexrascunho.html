@@ -1,50 +1,204 @@
-<div class="pack-content">
-  <div class="pack">
-    <button class="pack-title" data-tab="1">
-      <span
-        >Hotels and Resorts
-        <ion-icon class="icon" name="chevron-down-outline"></ion-icon
-      ></span>
-    </button>
-    <button class="pack-title" data-tab="2">
-      <span
-        >Cruise <ion-icon class="icon" name="chevron-down-outline"></ion-icon
-      ></span>
-    </button>
-    <button class="pack-title" data-tab="3">
-      <span
-        >Guided Tours
-        <ion-icon class="icon" name="chevron-down-outline"></ion-icon
-      ></span>
-    </button>
-  </div>
-  <div class="all-text">
-    <div class="pack-txts click1">
-      <p class="pack-loren">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore amet
-        atque quas doloribus ratione velit odio est? Quibusdam tempora deserunt
-        error a sequi iure excepturi dolorum earum? Soluta, quam nesciunt.
-      </p>
+<section id="section5" class="section-simulator">
+  <div class="simulator-title">Get your guided tours cost estimate with us</div>
+  <div class="simulator-grid">
+    <div class="sim-box simulator-stamps">
+      <div class="simulator-stamp">
+        <div class="sim-stamp">
+          <img
+            class="stamp"
+            src="Images/stamp-france.jpg"
+            alt="postal card of France"
+          />
+          <p class="france">France</p>
+        </div>
+        <div class="sim-stamp">
+          <img
+            class="stamp"
+            src="Images/stamp-eua.jpg"
+            alt="postal card of United States"
+          />
+          <p class="eua">United States</p>
+        </div>
+        <div class="sim-stamp">
+          <img
+            class="stamp"
+            src="Images/stamp-japan.jpg"
+            alt="postal card of Japan"
+          />
+          <p class="japan">Japan</p>
+        </div>
+        <div class="sim-stamp">
+          <img
+            class="stamp"
+            src="Images/stamp-brasil.jpg"
+            alt="postal card of Brazil"
+          />
+          <p class="brazil">Brazil</p>
+        </div>
+      </div>
     </div>
-    <div class="pack-txts click2">
-      <p class="pack-loren">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque
-        distinctio accusamus minima, ab fuga quaerat architecto sapiente, ullam
-        debitis consequatur totam nam quod adipisci! Amet debitis doloribus
-        incidunt voluptas repellat.
-      </p>
-    </div>
-    <div class="pack-txts click3">
-      <p class="pack-loren">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
-        necessitatibus voluptas assumenda sit! Fuga ducimus numquam neque
-        dolores voluptate, sapiente quaerat placeat eligendi ea officiis
-        deserunt tempora corrupti sint error!
-      </p>
-    </div>
-  </div>
-</div>
 
-<!-- <select class="pack-title" name="" id="countries-dropdown">
-              <option value="0">Hotels and Resorts</option>
-            </select> -->
+    <div class="sim-box simulator-itens">
+      <div class="simulator-lists">
+        <div>
+          <p>Airline ticket</p>
+          <div class="simulator-list">
+            <div>
+              <input type="checkbox" id="flight" name="flight" checked />
+              <label for="flight">FlyFree</label>
+            </div>
+            <div><p>&dollar; 196</p></div>
+          </div>
+          <div class="simulator-list">
+            <div>
+              <input type="checkbox" id="flight" name="flight" />
+              <label for="flight">Flying</label>
+            </div>
+            <div><p>&dollar; 190</p></div>
+          </div>
+          <div class="simulator-list">
+            <div>
+              <input type="checkbox" id="flight" name="flight" />
+              <label for="flight">Let's Travel</label>
+            </div>
+            <div><p>&dollar; 90</p></div>
+          </div>
+        </div>
+        <div>
+          <p>Car rental</p>
+          <div class="simulator-list">
+            <div>
+              <input type="checkbox" id="rental" name="rental" checked />
+              <label for="rental">Carring</label>
+            </div>
+            <div><p>&dollar; 80</p></div>
+          </div>
+          <div class="simulator-list">
+            <div>
+              <input type="checkbox" id="rental" name="rental" />
+              <label for="rental">Here in my car</label>
+            </div>
+            <div><p>&dollar; 100</p></div>
+          </div>
+        </div>
+        <div>
+          <p>Hotel room</p>
+          <div class="simulator-list">
+            <div>
+              <input type="checkbox" id="HotelR" name="HotelR" checked />
+              <label for="HotelR">Overlook</label>
+            </div>
+            <div><p>&dollar; 300</p></div>
+          </div>
+          <div class="simulator-list">
+            <div>
+              <input type="checkbox" id="HotelR" name="HotelR" />
+              <label for="HotelR">Bates Motel</label>
+            </div>
+            <div><p>&dollar; 200</p></div>
+          </div>
+          <div class="simulator-list">
+            <div>
+              <input type="checkbox" id="HotelR" name="HotelR" />
+              <label for="HotelR">Mickey's House</label>
+            </div>
+            <div><p>&dollar; 500</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sim-box simulator-choose">
+      <div class="chosen"></div>
+      <div class="choose"></div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .section-simulator {
+    height: 100vh;
+    background-image: url(Images/nature-4351455_1920.jpg);
+    /* background-attachment: fixed; */
+    background-size: cover;
+  }
+
+  .simulator-title {
+    text-align: center;
+    padding-top: 6rem;
+    font-size: 4.4rem;
+    font-weight: 600;
+    -webkit-text-stroke: 1px #212529;
+    color: #f1f3f5;
+    text-shadow: 3px 3px 0 #212529, -1px -1px 0 #212529, 1px -1px 0 #212529,
+      -1px 1px 0 #212529, 1px 1px 0 #212529;
+  }
+
+  .simulator-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2rem;
+    gap: 1.2rem;
+  }
+
+  .sim-box {
+    background: rgba(255, 255, 255, 0.26);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.4px);
+    -webkit-backdrop-filter: blur(2.4px);
+    border-radius: 1.1rem;
+    padding: 2rem;
+  }
+
+  .sim-stamp {
+    font-size: 2rem;
+    font-weight: 700;
+    background-color: #ffec99;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .sim-stamp:hover {
+    cursor: pointer;
+  }
+
+  .sim-stamp img:hover {
+    transition: all 0.4s;
+    transform: scale(1.1);
+  }
+
+  .simulator-stamp {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .stamp {
+    width: 100%;
+  }
+
+  .simulator-lists {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 2.4rem;
+    font-weight: 600;
+    text-align: center;
+
+    padding: 1rem;
+  }
+
+  .simulator-list {
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: start;
+
+    display: flex;
+    justify-content: space-between;
+
+    background-color: #e9ecef;
+
+    padding: 0 0.3em;
+    margin-bottom: 0.5rem;
+  }
+</style>
