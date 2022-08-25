@@ -287,7 +287,7 @@ span:nth-child(14) {
   font-size: 3.6rem;
   padding: 2rem;
 
-  color: #ced4da;
+  color: #f1f3f5;
 
   /* background: rgba(255, 255, 255, 0.26); */
   /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
@@ -346,7 +346,12 @@ span:nth-child(14) {
 }
 
 .explore-button {
+  color: #f1f3f5;
+}
+
+.explore-button:hover {
   cursor: pointer;
+  color: #868e96;
 }
 
 .explore-title {
@@ -518,6 +523,126 @@ span:nth-child(14) {
   height: 50rem;
 }
 
+.countries-box {
+  display: flex;
+  gap: 1rem;
+
+  box-shadow: #ccc 1px;
+  padding-left: 2rem;
+  margin-left: 8rem;
+}
+
+.sim-choose-country {
+  font-size: 2.4rem;
+
+  /* display: none; */
+}
+
+.sim-ball {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+
+  padding: 2rem;
+}
+
+.sim-ball img {
+  width: 20%;
+}
+
+.button-sim-right {
+  display: flex;
+  justify-content: end;
+  margin-right: 2rem;
+}
+
+.sim-country {
+  margin-bottom: 1.2rem;
+}
+
+.sim-lists,
+.sim-edit-delete {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 2.4rem;
+  font-weight: 600;
+  text-align: center;
+
+  padding: 1rem;
+
+  /* border-bottom: 2px solid #2125296e; */
+}
+
+.sim-lists {
+  display: none;
+}
+
+.sim-options,
+.chosen {
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: start;
+
+  display: flex;
+  justify-content: space-between;
+
+  /* background-color: #e9ecef; */
+
+  padding: 0 0.3em;
+  margin-bottom: 0.5rem;
+}
+
+.buttons-sim {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sim-next {
+  background: none;
+  border: none;
+}
+
+.icon-sim {
+  width: 3rem;
+  height: 3rem;
+  color: #f1f3f5;
+}
+
+.icon-sim:hover,
+.icon-edit:hover,
+.icon-delete:hover {
+  cursor: pointer;
+  color: #868e96;
+}
+
+.sim-edit-delete {
+  display: none;
+}
+
+.country-chosen {
+  display: flex;
+  justify-content: center;
+}
+
+.icon-delete {
+  padding-right: 1rem;
+}
+
+.sim-change {
+  display: flex;
+}
+
+.your-chosen {
+  border-bottom: 2px solid #f1f3f5;
+  padding-bottom: 1rem;
+}
+
+.sim-add-money {
+  display: flex;
+  gap: 0.5rem;
+}
+
 .simulator-title {
   text-align: end;
   text-transform: uppercase;
@@ -526,15 +651,6 @@ span:nth-child(14) {
 
   /* text-shadow: #ccc 1px 0 10px; */
   grid-column: 2;
-}
-
-.countries-box {
-  display: flex;
-  gap: 1rem;
-
-  box-shadow: #ccc 1px;
-  padding-left: 2rem;
-  margin-left: 8rem;
 }
 
 .sim-pic {

@@ -316,7 +316,177 @@
 
       <section id="section5" class="section-simulator">
         <div class="sim-grid">
-          <div class="sim-box"></div>
+          <div class="sim-box">
+            <div class="sim-choose-country">
+              <div class="sim-ball">
+                <input type="checkbox" id="country" name="country" />
+                <img src="Images/france-1524418_640.png" alt="" />
+                <p>France &hyphen; Paris</p>
+              </div>
+              <div class="sim-ball">
+                <input type="checkbox" id="country" name="country" checked />
+                <img src="Images/united-states-1524403_640.png" alt="" />
+                <p>United States &hyphen; Disney</p>
+              </div>
+              <div class="sim-ball">
+                <input type="checkbox" id="country" name="country" />
+                <img src="Images/japan-3573960_640.png" alt="" />
+                <p>Japan &hyphen; Tokyo</p>
+              </div>
+              <div class="sim-ball">
+                <input type="checkbox" id="country" name="country" />
+                <img src="Images/brazil-1524451_640.png" alt="" />
+                <p>Brazil &hyphen; Rio de Janeiro</p>
+              </div>
+              <div class="button-sim-right">
+                <button class="sim-next">
+                  <ion-icon
+                    class="icon-sim"
+                    name="arrow-forward-circle"
+                  ></ion-icon>
+                </button>
+              </div>
+            </div>
+            <div class="sim-lists">
+              <p class="sim-country">United States</p>
+              <div>
+                <p>Airline ticket</p>
+                <div class="sim-options">
+                  <div>
+                    <input type="checkbox" id="flight" name="flight" checked />
+                    <label for="flight">FlyFree</label>
+                  </div>
+                  <div><p>&dollar; 196</p></div>
+                </div>
+                <div class="sim-options">
+                  <div>
+                    <input type="checkbox" id="flight" name="flight" />
+                    <label for="flight">Flying</label>
+                  </div>
+                  <div><p>&dollar; 190</p></div>
+                </div>
+                <div class="sim-options">
+                  <div>
+                    <input type="checkbox" id="flight" name="flight" />
+                    <label for="flight">Let's Travel</label>
+                  </div>
+                  <div><p>&dollar; 90</p></div>
+                </div>
+              </div>
+              <div>
+                <p>Car rental</p>
+                <div class="sim-options">
+                  <div>
+                    <input type="checkbox" id="rental" name="rental" checked />
+                    <label for="rental">Carring</label>
+                  </div>
+                  <div><p>&dollar; 80</p></div>
+                </div>
+                <div class="sim-options">
+                  <div>
+                    <input type="checkbox" id="rental" name="rental" />
+                    <label for="rental">Here in my car</label>
+                  </div>
+                  <div><p>&dollar; 100</p></div>
+                </div>
+              </div>
+              <div>
+                <p>Hotel room</p>
+                <div class="sim-options">
+                  <div>
+                    <input type="checkbox" id="HotelR" name="HotelR" checked />
+                    <label for="HotelR">Overlook</label>
+                  </div>
+                  <div><p>&dollar; 300</p></div>
+                </div>
+                <div class="sim-options">
+                  <div>
+                    <input type="checkbox" id="HotelR" name="HotelR" />
+                    <label for="HotelR">Bates Motel</label>
+                  </div>
+                  <div><p>&dollar; 200</p></div>
+                </div>
+                <div class="sim-options">
+                  <div>
+                    <input type="checkbox" id="HotelR" name="HotelR" />
+                    <label for="HotelR">Mickey's House</label>
+                  </div>
+                  <div><p>&dollar; 500</p></div>
+                </div>
+              </div>
+              <div class="buttons-sim">
+              <div class="button-sim">
+                <button class="sim-next">
+                  <ion-icon class="icon-sim" name="arrow-back-circle"></ion-icon>
+                </button>
+              </div>
+              <div class="button-sim">
+                <button class="sim-next">
+                  <ion-icon
+                    class="icon-sim"
+                    name="arrow-forward-circle"
+                  ></ion-icon>
+                </button>
+              </div>
+              </div>
+            </div>
+            <div class="sim-edit-delete">
+              <div class="country-chosen">
+                <ion-icon class="icon icon-edit" name="create"></ion-icon>
+                <p>United States</p>
+              </div>
+              <div class="tickt-chosen chosen">
+                <div class="sim-change">
+                  <ion-icon class="icon icon-edit" name="create"></ion-icon>
+                  <ion-icon class="icon icon-delete" name="trash"></ion-icon>
+                  <p>FlyFree</p>
+                </div>
+                <div>
+                  <p>&dollar; 196</p>
+                </div>
+              </div>
+              <div class="car-chosen chosen">
+                <div class="sim-change">
+                  <ion-icon class="icon icon-edit" name="create"></ion-icon>
+                  <ion-icon class="icon icon-delete" name="trash"></ion-icon>
+                  <p>Carring</p>
+                </div>
+                <div>
+                  <p>&dollar; 80</p>
+                </div>
+              </div>
+              <div class="hotel-chosen chosen">
+                <div class="sim-change">
+                  <ion-icon class="icon icon-edit" name="create"></ion-icon>
+                  <ion-icon class="icon icon-delete" name="trash"></ion-icon>
+                  <p>Overlook</p>
+                </div>
+                <div>
+                  <p>&dollar; 300</p>
+                </div>
+              </div>
+              <div class="your-chosen chosen">
+                <div class="sim-change">
+                  <ion-icon class="icon icon-edit" name="create"></ion-icon>
+                  <ion-icon class="icon icon-delete" name="trash"></ion-icon>
+                  <input
+                    type="text"
+                    name="add"
+                    id="add-money"
+                    placeholder="Add item"
+                  />
+                </div>
+                <div class="sim-add-money">
+                  <p>&dollar;</p>
+                  <input type="number" placeholder="000" style="width: 50px" />
+                </div>
+              </div>
+              <div class="total-chosen chosen">
+                <p>Total</p>
+                <p>&dollar; 576</p>
+              </div>
+            </div>
+          </div>
           <div class="simulator-title">
             Get your guided tours cost <br />
             estimate with us
