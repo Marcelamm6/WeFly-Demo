@@ -535,7 +535,7 @@ span:nth-child(14) {
 .sim-choose-country {
   font-size: 2.4rem;
 
-  /* display: none; */
+  display: none;
 }
 
 .sim-ball {
@@ -617,7 +617,7 @@ span:nth-child(14) {
 }
 
 .sim-edit-delete {
-  display: none;
+  /* display: none; */
 }
 
 .country-chosen {
