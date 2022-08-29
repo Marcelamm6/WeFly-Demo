@@ -144,3 +144,31 @@ dropEl.addEventListener('click', function (e) {
     .querySelector(`.click${clicked.dataset.tab}`)
     .classList.add('txt-active');
 });
+
+// -------------------Crud--------------------
+
+const france = {
+  name: 'France',
+  airlineTicket: ['Voyagé', 'Aviateurs', 'Petit avion'],
+  carRental: ['Circulé', 'Incassable'],
+  hotelRoom: ['Chateau de Puymartin', 'Versailles', 'Mont Saint-Michel'],
+};
+
+const eua = {
+  name: 'United States',
+  airlineTicket: ['FlyFree', 'Flying', `Let's travel`],
+  carRental: ['Carring', 'Here in my car'],
+  hotelRoom: ['Overlook', 'Bates Motel', `Mickey's house`],
+};
+const japan = {
+  name: 'Japan',
+  airlineTicket: ['Tsuyoi hikōki', 'Chīsana hikōki', ''],
+  carRental: ['Kāto', 'Ōkī kuruma'],
+  hotelRoom: [`Kame's house`, 'Obakeyashi', `Karin's tower`],
+};
+const brazil = {
+  name: 'Brazil',
+  airlineTicket: ['Voamos', 'Nuvens douradas', 'Solzinho'],
+  carRental: ['Passa a grana', 'Rios'],
+  hotelRoom: ['Nome em ingles', 'Riozinho', 'Bons sonhos'],
+};
