@@ -1,0 +1,58 @@
+/* 1444px */
+@media (max-width: 90em) {
+  .card {
+    height: 48rem;
+  }
+}
+
+/* 1219px */
+@media (max-width: 76em) {
+  .pack-gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+  .img-show {
+    display: none;
+  }
+
+  .section-inspirations {
+    padding: 0;
+  }
+  .inspire-videos {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .vids {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    padding: 2rem;
+  }
+  .title-inspirations {
+    writing-mode: horizontal-tb;
+    font-size: 5.2rem;
+    padding: 0;
+  }
+  .vid-big {
+    display: none;
+  }
+
+  .sim-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    padding: 8rem 8rem 4rem 8rem;
+  }
+  .countries-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .sim-pic {
+    height: 20rem;
+    width: 13rem;
+  }
+}
+
+/* 952px */
+@media (max-width: 60em) {
+}

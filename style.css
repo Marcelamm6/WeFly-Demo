@@ -190,17 +190,45 @@ span:nth-child(14) {
   margin-top: 6rem;
 }
 
+/*------------------------- SECTION LOGOS---------------------------- */
+
+.section-partners {
+  padding: 8rem 0;
+  background-color: #e9ecef;
+}
+
+.title-partners {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.logos {
+  margin: 0 auto;
+  padding: 0 0 4rem 0;
+  display: flex;
+  justify-content: space-around;
+  max-width: 120rem;
+}
+
+.title-partners,
+.logos img {
+  height: 4.6rem;
+  filter: brightness(0);
+  opacity: 50%;
+}
+
 /*---------------------- SECTION CARDS---------------------------- */
 
 .cards {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 2.4rem;
   padding: 0 8rem;
 }
 
 .card {
-  /* height: 38rem; */
+  height: 64rem;
   background-color: #f1f3f5;
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
   border-radius: 1.1rem;
@@ -217,6 +245,7 @@ span:nth-child(14) {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 
   padding: 1rem 4.8rem 6.4rem 4.8rem;
 }
@@ -242,7 +271,7 @@ span:nth-child(14) {
 }
 
 .card-text {
-  font-size: 1.6rem;
+  font-size: 2rem;
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -252,7 +281,7 @@ span:nth-child(14) {
   overflow: hidden;
 }
 
-.card-guidedtour::after {
+/* .card-guidedtour::after {
   content: 'New places';
   position: absolute;
   top: 10%;
@@ -266,7 +295,7 @@ span:nth-child(14) {
   padding: 0.8rem 8rem;
 
   transform: rotate(45deg);
-}
+} */
 
 /*------------------------ SECTION EXPLORE----------------------- */
 
@@ -363,6 +392,11 @@ span:nth-child(14) {
 }
 
 /*----------------------- SECTION PACKAGES----------------------- */
+
+/* .section-packages {
+  background-color: #dee2e6;
+} */
+
 .gallery-view {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -378,6 +412,7 @@ span:nth-child(14) {
 
 .pack {
   display: flex;
+  justify-content: center;
   gap: 1rem;
 }
 
@@ -433,8 +468,8 @@ span:nth-child(14) {
 }
 
 .pack-img {
-  height: 14.5rem;
-  width: 20rem;
+  height: 17.5rem;
+  width: 23rem;
 }
 
 .pack-img {
@@ -455,8 +490,10 @@ span:nth-child(14) {
 
 .section-inspirations {
   height: 100vh;
+  background-image: url(Images/clouds-g003077bab_1920.jpg);
+  background-size: cover;
   /* max-width: 120rem; */
-  margin-top: 10rem;
+  /* margin-top: 10rem; */
   padding: 8rem 4rem 0 4rem;
 }
 
@@ -522,7 +559,8 @@ span:nth-child(14) {
   border-radius: 1.1rem;
 
   align-self: center;
-  height: 50rem;
+  /* height: 65rem; */
+  padding: 2rem 0 28rem 0;
 }
 
 .countries-box {
@@ -577,7 +615,7 @@ span:nth-child(14) {
 }
 
 .sim-lists {
-  /* display: none; */
+  display: none;
 }
 
 .sim-options,
@@ -619,7 +657,7 @@ span:nth-child(14) {
 }
 
 .sim-edit-delete {
-  display: none;
+  /* display: none; */
 }
 
 .country-chosen {
@@ -672,32 +710,6 @@ span:nth-child(14) {
 .sim-pic img:hover {
   transition: all 0.4s;
   transform: scale(1.1);
-}
-
-/*------------------------- SECTION LOGOS---------------------------- */
-
-.section-partners {
-  margin: 8rem 0;
-}
-
-.title-partners {
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.logos {
-  margin: 0 auto;
-  padding: 0 0 4rem 0;
-  display: flex;
-  justify-content: space-around;
-  max-width: 120rem;
-}
-
-.title-partners,
-.logos img {
-  height: 4.6rem;
-  filter: brightness(0);
-  opacity: 50%;
 }
 
 /*----------------------------------- FOOTER--------------------------------- */
