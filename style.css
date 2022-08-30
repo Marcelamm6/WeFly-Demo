@@ -468,8 +468,8 @@ span:nth-child(14) {
 }
 
 .pack-img {
-  height: 17.5rem;
-  width: 23rem;
+  height: 13.5rem;
+  width: 19rem;
 }
 
 .pack-img {
@@ -559,8 +559,8 @@ span:nth-child(14) {
   border-radius: 1.1rem;
 
   align-self: center;
-  /* height: 65rem; */
-  padding: 2rem 0 28rem 0;
+  height: 50rem;
+  /* padding: 2rem 0 28rem 0; */
 }
 
 .countries-box {
@@ -570,6 +570,7 @@ span:nth-child(14) {
   box-shadow: #ccc 1px;
   padding-left: 2rem;
   margin-left: 8rem;
+  justify-content: center;
 }
 
 .sim-choose-country {

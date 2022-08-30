@@ -7,6 +7,9 @@
 
 /* 1219px */
 @media (max-width: 76em) {
+  html {
+    font-size: 50%;
+  }
   .pack-gallery {
     grid-template-columns: 1fr 1fr;
   }
@@ -37,16 +40,6 @@
     display: none;
   }
 
-  .sim-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 2fr;
-    padding: 8rem 8rem 4rem 8rem;
-  }
-  .countries-box {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
   .sim-pic {
     height: 20rem;
     width: 13rem;
