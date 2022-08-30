@@ -48,4 +48,27 @@
 
 /* 952px */
 @media (max-width: 60em) {
+  html {
+    font-size: 35%;
+  }
+  .card {
+    height: 48rem;
+  }
+  .img-show-2 {
+    display: none;
+  }
+  .pack-img {
+    height: 17.5rem;
+    width: 23rem;
+  }
 }
+
+/* 810px */
+@media (max-width: 51em) {
+  .vid-3 {
+    display: none;
+  }
+  .sim-pic-rio {
+    display: none;
+  }
+} ;
