@@ -55,6 +55,24 @@
   background-color: #868e96;
 }
 
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #f8f9fa;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 3.2rem;
+  width: 3.2rem;
+}
+
+.icon-mobile-nav[name='close-outline'] {
+  display: none;
+}
+
 .home-page {
   height: 100vh;
   position: relative;

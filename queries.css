@@ -71,4 +71,11 @@
   .sim-pic-rio {
     display: none;
   }
+
+  .btn-mobile-nav {
+    display: block;
+  }
+
+  .main-nav {
+  }
 } ;
