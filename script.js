@@ -1,5 +1,14 @@
 'use strict';
 
+// --------Mobile navigation---------
+
+const btnNavEl = document.querySelector('.btn-mobile-nav');
+const headerEl = document.querySelector('.header');
+
+btnNavEl.addEventListener('click', function () {
+  headerEl.classList.toggle('nav-open');
+});
+
 //---------Sticky navigation--------
 
 const homePage = document.querySelector('.home-page');
@@ -172,3 +181,8 @@ const brazil = {
   carRental: ['Passa a grana', 'Rios'],
   hotelRoom: ['Nome em ingles', 'Riozinho', 'Bons sonhos'],
 };
+
+// Footer year
+const yearEl = document.querySelector('.year');
+const currentYear = new Date().getFullYear();
+yearEl.textContent = currentYear;

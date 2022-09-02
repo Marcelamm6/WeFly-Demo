@@ -50,17 +50,20 @@ Default: 1.1rem;
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
   font-family: 'Rubik', sans-serif;
   background-color: #f1f3f5;
   width: 100%;
+
+  overflow-x: hidden;
 }
 
 .container {
-  height: 100vh;
-  /* max-width: 120rem; */
+  /* height: 100vh; */
+  max-width: 160rem;
   /* padding: 0 3.2rem; */
   margin: 0 auto;
 }
