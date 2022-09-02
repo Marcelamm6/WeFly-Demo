@@ -616,7 +616,7 @@ span:nth-child(14) {
 }
 
 .sim-lists {
-  display: none;
+  /* display: none; */
 }
 
 .sim-options,
@@ -658,7 +658,7 @@ span:nth-child(14) {
 }
 
 .sim-edit-delete {
-  /* display: none; */
+  display: none;
 }
 
 .country-chosen {
