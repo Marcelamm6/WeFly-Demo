@@ -325,7 +325,7 @@ span:nth-child(14) {
 
 .section-explore {
   height: 100vh;
-  max-width: 160rem;
+  /*max-width: 160rem;/*
   background-image: url(Images/utah-g72e2c759d_1920.jpg);
   /* background-attachment: fixed; */
   background-size: cover;
@@ -515,11 +515,12 @@ span:nth-child(14) {
 
 .section-inspirations {
   /* height: 100vh; */
-  max-width: 160rem;
+
   background-image: url(Images/clouds-g003077bab_1920.jpg);
   background-size: cover;
   /* max-width: 120rem; */
-  /* margin-top: 10rem; */
+  margin-top: 10rem;
+  margin-bottom: 10rem;
   padding: 8rem 4rem 0 4rem;
 }
 
@@ -563,7 +564,7 @@ span:nth-child(14) {
 
 .section-simulator {
   /* height: 100vh; */
-  max-width: 160rem;
+  /* max-width: 160rem; */
 
   background-image: url(Images/nature-4351455_1920.jpg);
   /* background-attachment: fixed; */
