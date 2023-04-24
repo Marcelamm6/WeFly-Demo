@@ -325,7 +325,7 @@ span:nth-child(14) {
 
 .section-explore {
   height: 100vh;
-  /*max-width: 160rem;/*
+  /*max-width: 160rem;*/
   background-image: url(Images/utah-g72e2c759d_1920.jpg);
   /* background-attachment: fixed; */
   background-size: cover;
